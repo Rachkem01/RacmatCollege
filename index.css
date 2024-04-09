@@ -1,0 +1,602 @@
+*{
+
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100vh;
+    background-color: rgb(10, 9, 9);
+}
+
+.container-head{
+    width: 90%;
+    height: 20px;
+    margin-left: -50px;
+    position: relative;
+    display: inline;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 10px 20px;
+}
+.school-icon{
+    width: 50px;
+    height:30px;
+    background-color: white;
+   left: 7%;
+   
+    position: absolute;
+}
+.racmat{
+  margin-left: 5%;  
+  cursor: pointer;
+}
+.icon{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.timetable:hover{
+    color:red;
+    cursor: pointer;
+}
+
+i{
+    margin: 10px;
+}
+
+.school-icon{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.video{
+   position: relative; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-weight: bold;
+   font-size: 1.8rem;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.video1{
+    position: relative;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    z-index: 1;
+    margin-top: 0%;
+    text-align: center;
+    animation: content ease-in infinite 2.5s;
+    cursor: pointer;
+    
+}
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.home{
+    width: 95%;
+    height: 30%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; */
+    margin-left: 35px;
+    cursor: pointer;
+}
+.teach{
+    position: absolute;
+    color:rgb(176, 176, 8);
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    z-index: 1;
+    top: 30%;
+    left: 10%;
+}
+
+.fa fa-circle{
+    display: inline-flex;
+    background-color: navy;
+    cursor: pointer;
+    
+}
+.news{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding-left: 5%;
+    gap: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.events{
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.timetable{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid navy;
+    color: white;
+    position: relative;
+    /* margin-top: -5px; */
+}
+.right{
+    position: relative;
+    left: -80%;
+}
+
+.ss{
+    position: relative;
+    left: -3%;
+   
+}
+
+/* .content:hover{
+    -webkit-text-stroke: 20px solid black;
+    color:black;
+    font-size: 2.5rem; */
+/* } */
+@media(min-aspect-ratio:16/9 ){
+    .video1{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio){
+    .video1{
+        width: auto;
+        height: 100%;
+    }
+}
+@keyframes content {
+    50%{
+        color: #000;
+        font-size: 2.5rem;
+    }
+}
+/* Javascript */
+#search.active{
+    color: yellow;
+}
+
+#bars.active{
+    color: yellow;
+}
+
+#input{
+    width: 300px;
+    height: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+display: none; 
+
+}
+
+.close{
+    position: relative;
+    top: -0px;
+    right: 35px;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#input.active{
+    display: inline;
+}
+.close.active{
+    display: inline;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+}
+li{
+    line-height: 50px;
+    user-select: none;
+}
+
+li:hover{
+    color:white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: scale(1.5);
+    -webkit-text-stroke-color: blue;
+   
+   
+}
+
+.nav{
+    /* background-color:white; */
+     font-size: 1.2rem;
+    width: 270px; 
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+     left: 75%;
+     display: none;
+   
+    
+    
+    
+
+}
+
+.close-nav{
+    position: relative;
+    top: -30%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.close-nav:hover{
+    color: red;
+}
+.bars.active{
+color: yellow;
+}
+/* javascript */
+.nav.active{
+    display: block;
+
+}
+.close-nav.active{
+    color: red;
+}
+.close-bar{
+    color: red;
+}
+
+/* .line{
+    width: 320px;
+    height: 2px;
+   background-color:  #000; */
+
+
+.mid{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.term{
+    
+    color:white;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+    /* z-index: 1;
+    position: absolute; */
+    
+    
+   
+}
+table,
+th,
+tr,
+td
+{
+    border: 2px white solid;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 10px;
+    user-select: none;
+}
+
+.term.active{
+    display: block;
+}
+
+img.timetable{
+    width: 310px;
+    height: 250px;
+    background-position:center;
+    background-size: cover;
+
+    position: relative;
+    filter: opacity(85%);
+   
+    
+}
+td{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+.abut{
+    font-size: medium;
+    font-weight: 700;
+    /* color: navy;
+    text-decoration: underline 3px black; */
+}
+.vision{
+    color:white;
+    text-decoration: underline 3px solid blue;
+    font-size: bold;
+    font-weight: 700;
+  line-break: auto;
+}
+
+
+.wrapper{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-left: 5rem;
+    cursor: pointer;
+    user-select: none;
+    height: 0;
+   visibility: hidden;
+    
+}
+
+.form{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 15px;
+    margin-left: 5rem;
+    height: 0;
+    visibility: hidden;
+}
+
+.form input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px auto;
+    background-color: transparent;
+    color: white;
+}
+.fees{
+    position: absolute;
+color: white;
+font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-left: 5rem;
+    height: 0;
+    visibility: hidden;
+   
+}
+
+.report{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin: 5rem;
+    text-align: start;
+    height: 0;
+    visibility: hidden;
+    
+}
+
+.academics{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 50px;
+    margin-left: 5rem;
+    height: 0;
+    visibility: hidden;
+   
+}
+
+.wrapper h3{
+    text-decoration: underline blue 3px solid;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    line-height: 25px
+    
+}
+#submitF{
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:  15px;
+    color:white;
+    border: 1px solid red;
+    outline: none;
+    margin-left: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.academics h3{
+    text-decoration: underline 3px solid blue;
+    font-size: bold;
+    font-weight: 700;
+}
+
+.academics input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px auto;
+    background-color: transparent;
+    color: white;
+}
+#viewR{
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:  15px;
+    color:white;
+    border: 1px solid red;
+    outline: none;
+    margin-left: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fees input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px auto;
+    background-color: transparent;
+    color: white;
+}
+
+#payment{
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:  15px;
+    color:white;
+    border: 1px solid red;
+    outline: none;
+    margin-left: 5rem;
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+#inputBox{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    border: none;
+    outline: none;
+    text-align: start;
+    color:black;
+    
+    
+}
+
+#submitS{
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:  15px;
+    color:white;
+    border: 1px solid red;
+    outline: none;
+    margin-left: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.wrapper.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+    top: 1;
+    
+}
+
+.form.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+}
+.fees.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+}
+.academics.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+}
+.report.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+}
+
+small{
+    color:red;
+margin-left: 10rem;
+position: absolute;
+height: 0;
+visibility: hidden;
+}
+
+small.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+}
+.thanks{
+    color: white;
+
+}
+.email{
+    color: white;
+    margin-bottom: 10px;
+}
+.result{
+    color: white;
+}
+.response{
+    color: white;
+}
